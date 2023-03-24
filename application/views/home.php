@@ -1,68 +1,5 @@
 <?php $this->load->view('header'); ?>
 
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
-    </div>
-    <!-- Spinner End -->
-
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-0">
-        <div class="row g-0 d-none d-lg-flex">
-            <div class="col-lg-6 ps-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center text-white">
-                    <span>Follow Us:</span>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-6 text-end">
-                <div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
-                    <span class="fs-5 fw-bold me-2"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
-                    <span class="fs-5 fw-bold">+012 345 6789</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
-        <a href="index.html" class="navbar-brand ps-5 me-0">
-            <h1 class="text-white m-0">Industro</h1>
-        </a>
-        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="project.html" class="dropdown-item">Projects</a>
-                        <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <a href="" class="btn btn-primary px-3 d-none d-lg-block">Get A Quote</a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
-
-
     <!-- Carousel Start -->
     <div class="container-fluid px-0 mb-5">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -84,7 +21,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <img class="w-100" src="<?php echo base_url('assets/img/carousel-2.jpg')?>" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
@@ -120,10 +57,10 @@
                 <div class="col-lg-6">
                     <div class="row gx-3 h-100">
                         <div class="col-6 align-self-start wow fadeInUp" data-wow-delay="0.1s">
-                            <img class="img-fluid" src="img/about-1.jpg">
+                            <img class="img-fluid" src="<?php echo base_url('assets/img/about-1.jpg')?>">
                         </div>
                         <div class="col-6 align-self-end wow fadeInDown" data-wow-delay="0.1s">
-                            <img class="img-fluid" src="img/about-2.jpg">
+                            <img class="img-fluid" src="<?php echo base_url('assets/img/about-2.jpg')?>">
                         </div>
                     </div>
                 </div>
@@ -220,7 +157,7 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="position-relative me-lg-4">
-                        <img class="img-fluid w-100" src="img/feature.jpg" alt="">
+                        <img class="img-fluid w-100" src="<?php echo base_url('assets/img/feature.jpg')?>" alt="">
                         <span
                             class="position-absolute top-50 start-100 translate-middle bg-white rounded-circle d-none d-lg-block"
                             style="width: 120px; height: 120px;"></span>
@@ -313,9 +250,9 @@
             <div class="row gy-5 gx-4">
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item">
-                        <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        <img class="img-fluid" src="<?php echo base_url('assets/img/service-1.jpg')?>" alt="">
                         <div class="service-img">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                            <img class="img-fluid" src="<?php echo base_url('assets/img/service-1.jpg')?>" alt="">
                         </div>
                         <div class="service-detail">
                             <div class="service-title">
@@ -333,9 +270,9 @@
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item">
-                        <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        <img class="img-fluid" src="<?php echo base_url('assets/img/service-2.jpg')?>" alt="">
                         <div class="service-img">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                            <img class="img-fluid" src="<?php echo base_url('assets/img/service-2.jpg')?>" alt="">
                         </div>
                         <div class="service-detail">
                             <div class="service-title">
@@ -353,9 +290,9 @@
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item">
-                        <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        <img class="img-fluid" src="<?php echo base_url('assets/img/service-3.jpg')?>" alt="">
                         <div class="service-img">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                            <img class="img-fluid" src="<?php echo base_url('assets/img/service-3.jpg')?>" alt="">
                         </div>
                         <div class="service-detail">
                             <div class="service-title">
@@ -385,37 +322,37 @@
         </div>
         <div class="owl-carousel project-carousel wow fadeIn" data-wow-delay="0.1s">
             <a class="project-item" href="">
-                <img class="img-fluid" src="img/project-1.jpg" alt="">
+                <img class="img-fluid" src="<?php echo base_url('assets/img/project-1.jpg')?>" alt="">
                 <div class="project-title">
                     <h5 class="text-primary mb-0">Auto Engineering</h5>
                 </div>
             </a>
             <a class="project-item" href="">
-                <img class="img-fluid" src="img/project-2.jpg" alt="">
+                <img class="img-fluid" src="<?php echo base_url('assets/img/project-2.jpg')?>" alt="">
                 <div class="project-title">
                     <h5 class="text-primary mb-0">Civil Engineering</h5>
                 </div>
             </a>
             <a class="project-item" href="">
-                <img class="img-fluid" src="img/project-3.jpg" alt="">
+                <img class="img-fluid" src="<?php echo base_url('assets/img/project-3.jpg')?>" alt="">
                 <div class="project-title">
                     <h5 class="text-primary mb-0">Gas Engineering</h5>
                 </div>
             </a>
             <a class="project-item" href="">
-                <img class="img-fluid" src="img/project-4.jpg" alt="">
+                <img class="img-fluid" src="<?php echo base_url('assets/img/project-4.jpg')?>" alt="">
                 <div class="project-title">
                     <h5 class="text-primary mb-0">Power Engineering</h5>
                 </div>
             </a>
             <a class="project-item" href="">
-                <img class="img-fluid" src="img/project-5.jpg" alt="">
+                <img class="img-fluid" src="<?php echo base_url('assets/img/project-5.jpg')?>" alt="">
                 <div class="project-title">
                     <h5 class="text-primary mb-0">Energy Engineering</h5>
                 </div>
             </a>
             <a class="project-item" href="">
-                <img class="img-fluid" src="img/project-6.jpg" alt="">
+                <img class="img-fluid" src="<?php echo base_url('assets/img/project-6.jpg')?>" alt="">
                 <div class="project-title">
                     <h5 class="text-primary mb-0">Water Engineering</h5>
                 </div>
@@ -435,7 +372,7 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item">
-                        <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        <img class="img-fluid" src="<?php echo base_url('assets/img/team-1.jpg')?>" alt="">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-square bg-primary" style="width: 90px; height: 90px;">
                                 <i class="fa fa-2x fa-share text-white"></i>
@@ -458,7 +395,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item">
-                        <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        <img class="img-fluid" src="<?php echo base_url('assets/img/team-2.jpg')?>" alt="">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-square bg-primary" style="width: 90px; height: 90px;">
                                 <i class="fa fa-2x fa-share text-white"></i>
@@ -481,7 +418,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item">
-                        <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        <img class="img-fluid" src="<?php echo base_url('assets/img/team-3.jpg')?>" alt="">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-square bg-primary" style="width: 90px; height: 90px;">
                                 <i class="fa fa-2x fa-share text-white"></i>
@@ -518,7 +455,7 @@
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item text-center">
                     <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-1.jpg">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="<?php echo base_url('assets/img/testimonial-1.jpg')?>">
                         <div class="btn-square bg-primary rounded-circle">
                             <i class="fa fa-quote-left text-white"></i>
                         </div>
@@ -533,7 +470,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-2.jpg">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="<?php echo base_url('assets/img/testimonial-2.jpg')?>">
                         <div class="btn-square bg-primary rounded-circle">
                             <i class="fa fa-quote-left text-white"></i>
                         </div>
@@ -548,7 +485,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-3.jpg">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="<?php echo base_url('assets/img/testimonial-3.jpg')?>">
                         <div class="btn-square bg-primary rounded-circle">
                             <i class="fa fa-quote-left text-white"></i>
                         </div>
